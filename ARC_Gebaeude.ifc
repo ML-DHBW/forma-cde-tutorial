@@ -1,0 +1,18 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [CoordinationView]'),'2;1');
+FILE_NAME('ARC_Gebaeude.ifc','2026-08-18T12:00:00',('DHBW Mosbach'),('CDE Lernpfad'),'OpenAI','OpenAI','API-Test');
+FILE_SCHEMA(('IFC4'));
+ENDSEC;
+DATA;
+#1=IFCPERSON($,'Student',$,$,$,$,$,$);
+#2=IFCORGANIZATION($,'DHBW Mosbach',$,$,$);
+#3=IFCPERSONANDORGANIZATION(#1,#2,$);
+#4=IFCAPPLICATION(#2,'1.0','CDE Lernpfad','CDE-TUTORIAL');
+#5=IFCOWNERHISTORY(#3,#4,$,.ADDED.,$,$,$,1787047200);
+#6=IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#7=IFCUNITASSIGNMENT((#6));
+#8=IFCGEOMETRICREPRESENTATIONCONTEXT($,'Model',3,1.E-05,$,$);
+#9=IFCPROJECT('2zG7xj7Jv8R8TestProjec',#5,'CDE Tutorial Test',$,$,$,$,(#8),#7);
+ENDSEC;
+END-ISO-10303-21;
